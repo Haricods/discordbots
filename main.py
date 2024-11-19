@@ -33,7 +33,8 @@ async def on_message(message):
   joking = await Tell_joke()
   if message.content.startswith("!joke"):
     await message.channel.send(joking)
-
+  if message.content.startswith("!help"):
+    await message.channel.send("I tell jokes -start typing '!joke'")
 
   
 
